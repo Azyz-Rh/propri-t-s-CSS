@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>font-family</title>
+</head>
+<body>
+    <h1>font-family</h1>
+    <h2>Définition et utilisation</h2>
+    <p class="p1">La <span>font-family</span> propriété spécifie la police d'un élément.
+
+        La font-familypropriété peut contenir plusieurs noms de polices comme système de « secours ». Si le navigateur ne prend pas en charge la première police, il essaie la police suivante.
+        
+        Il existe deux types de noms de famille de polices :
+        
+        family-name - Le nom d'une famille de polices, comme "times", "courrier", "arial", etc.
+        famille-générique - Le nom d'une famille générique, comme "serif", "sans-serif", "cursive", "fantasy", "monospace".
+        Commencez par la police souhaitée et terminez toujours par une famille générique, pour permettre au navigateur de choisir une police similaire dans la famille générique, si aucune autre police n'est disponible.
+        
+        Remarque : Séparez chaque valeur par une virgule.
+        
+        Remarque : Si le nom d'une police contient des espaces, il doit être mis entre guillemets. Des guillemets simples doivent être utilisés lors de l'utilisation de l'attribut "style" en HTML.
+        
+        
+        </p>
+        <h3>Exemple</h3>
+        <p style="font-weight: bold" class="text-body"><span style="color: brown">p</span> {<br /><span style="color: red ; right : 20px">font-family</span>: <span style="color: blue">serif</span>;<br />}</p>
+
+        <p style="font-family: serif;">exemple</p>
+        <p>
+          <p style="font-weight: bold" class="text-body"><span style="color: brown">p</span> {<br /><span style="color: red ; right : 20px">font-family</span>: <span style="color: blue">sans-serif</span>;<br />}</p>
+
+          <p style="font-family: sans-serif;">exemple</p>
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css</title>
+    <style>
+        body {
+            background-color: pink;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .lien {
+            text-decoration: none;
+            color: bisque;
+            font-weight: 550;
+            font-family: serif;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            width: 190px;
+            height: 254px;
+            border-radius: 20px;
+            background: #E0F3EA;
+            position: relative;
+            padding: 1.8rem;
+            border: 2px solid #c3c6ce;
+            transition: 0.5s ease-out;
+            overflow: visible;
+        }
+
+        .card-details {
+            color: black;
+            height: 100%;
+            gap: .5em;
+            display: grid;
+            place-content: center;
+        }
+
+        .card-button {
+            transform: translate(-50%, 125%);
+            width: 60%;
+            border-radius: 1rem;
+            border: none;
+            background-color: #008bf8;
+            color: #fff;
+            font-size: 1rem;
+            padding: .5rem 1rem;
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            opacity: 0;
+            transition: 0.3s ease-out;
+        }
+
+        .text-body {
+            color: rgb(134, 134, 134);
+            font-family: 'Courrier New', Courrier, monospace;
+        }
+
+        .text-title {
+            font-size: 1.5em;
+            font-weight: bold;
+            font-family: 'Monteserrat' , sans-serif;
+        }
+
+        .card:hover {
+            border-color: #008bf8;
+            box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+        }
+
+        .card:hover .card-button {
+            transform: translate(-50%, 50%);
+            opacity: 1;
+        }
+
+        .link-bottom-right {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #008bf8;
+            color: bisque;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <div class="card">
+
+            <div class="card-details">
+                <p class="text-title">Font-family</p>
+                <p style="font-weight: bold" class="text-body"><span style="color: brown">p</span> {<br /><span style="color: red ; right : 20px">font-family</span>: <span style="color: blue">cursive</span>;<br />}</p>
+
+            </div>
+            <button class="card-button"><a class="lien" href="font-family.html">Plus d'informations</a></button>
+        </div>
+        <div class="card">
+            <div class="card-details">
+                <p class="text-title">Font-size</p>
+                <p style="font-weight: bold" class="text-body"><span style="color: brown">p</span> {<br /><span style="color: red ; right : 20px">font-size</span>: <span style="color: blue">40px</span>;<br />}</p>
+            </div>
+            <button class="card-button"><a class="lien" href="font-size.html">Plus d'informations</a></button>
+        </div>
+        <div class="card">
+            <div class="card-details">
+                <p class="text-title">Font-weight</p>
+                <p style="font-weight: bold" class="text-body"><span style="color: brown">p</span> {<br /><span style="color: red ; right : 20px">font-weight</span>: <span style="color: blue">bold</span>;<br />}</p>
+            </div>
+            <button class="card-button"><a class="lien" href="font-wieght.html">Plus d'informations</a></button>
+        </div>
+        <div class="card">
+            <div class="card-details">
+                <p class="text-title">Font-style</p>
+                <p style="font-weight: bold" class="text-body"><span style="color: brown">p</span> {<br /><span style="color: red ; right : 20px">font-style</span>: <span style="color: blue">italic</span>;<br />}</p>
+            </div>
+            <button class="card-button"><a class="lien" href="font-style.html">Plus d'informations</a></button>
+        </div>
+    </div>
+    <a href="Cours CSS2.html" class="link-bottom-right">Plus de propriétés</a>
+</body></html>
